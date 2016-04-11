@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.carlos.proyecto2ab.Menu">
+    tools:context="com.example.carlos.proyecto2ab.Menu"
+    android:background="#274323">
 
     <Button
         android:layout_width="wrap_content"
