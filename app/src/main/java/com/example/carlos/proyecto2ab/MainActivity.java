@@ -13,11 +13,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void darclick(View View){
-        Intent i = new Intent(this, com.example.carlos.proyecto2ab.Menu.class);
+    public void iniciar(View View){
+        //finish();
+        Intent i = new Intent(this, com.example.carlos.proyecto2ab.iniciar.class);
         //i.putExtra("direccion", et1.getText().toString());
         startActivity(i);
+    }
 
+
+    public void registrarse(View View){
+        //finish();
+        Intent i = new Intent(this, com.example.carlos.proyecto2ab.registrar.class);
+        //i.putExtra("direccion", et1.getText().toString());
+        startActivity(i);
     }
 
 }

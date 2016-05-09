@@ -8,10 +8,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.carlos.proyecto2ab.Menu"
-    android:background="#274323">
+    android:background="#768275">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Mi Presupuesto"
         android:id="@+id/presupuesto1"
@@ -24,7 +24,7 @@
         android:onClick="darclick1" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Balance"
         android:id="@+id/balance1"
@@ -37,7 +37,7 @@
         android:onClick="darclick3" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Ahorro"
         android:id="@+id/ahorro1"
@@ -50,7 +50,7 @@
         android:onClick="darclick5" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Mis Gastos"
         android:id="@+id/gastos1"
@@ -60,16 +60,16 @@
         android:onClick="darclick2" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Consejos"
         android:id="@+id/consejos1"
-        android:layout_alignTop="@+id/balance1"
-        android:layout_alignEnd="@+id/gastos1"
-        android:onClick="darclick4" />
+        android:onClick="darclick4"
+        android:layout_above="@+id/ahorro1"
+        android:layout_toEndOf="@+id/balance1" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:text="Mi Perfil"
         android:id="@+id/perfil1"
@@ -77,8 +77,14 @@
         android:layout_toEndOf="@+id/ahorro1"
         android:onClick="darclick6" />
 
-
-
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar  sesion"
+        android:id="@+id/button19"
+        android:onClick="salir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/perfil1" />
 
 
 </RelativeLayout>

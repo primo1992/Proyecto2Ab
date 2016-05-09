@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.carlos.proyecto2ab.presupuesto">
+    tools:context="com.example.carlos.proyecto2ab.presupuesto"
+    android:background="@android:color/darker_gray">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +16,8 @@
         android:text="Mi Presupuesto"
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,14 +26,17 @@
         android:id="@+id/textView4"
         android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:textSize="16dp" />
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
         android:layout_alignTop="@+id/textView4"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_alignStart="@+id/textView3"
+        android:textColor="#26800a"
+        android:textColorLink="#26800a" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -44,43 +49,58 @@
         android:checked="false"
         android:onClick="seleccionar" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Concepto"
-        android:id="@+id/textView5"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText4"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valor"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/editText4"
-        android:layout_alignEnd="@+id/textView4" />
-
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText5"
-        android:layout_below="@+id/editText4"
-        android:layout_toEndOf="@+id/textView6" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guardar"
         android:id="@+id/mensaje1"
-        android:layout_marginTop="48dp"
-        android:layout_below="@+id/editText5"
+        android:onClick="mensaje"
+        android:layout_below="@+id/editText4"
         android:layout_centerHorizontal="true"
-        android:onClick="mensaje" />
+        android:layout_marginTop="62dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignStart="@+id/editText5"
+        android:visibility="invisible"
+        android:textColor="#26800a"
+        android:textColorLink="#26800a" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText3"
+        android:visibility="invisible"
+        android:textColor="#26800a"
+        android:textColorLink="#26800a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Concepto"
+        android:id="@+id/textView5"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monto"
+        android:id="@+id/textView6"
+        android:textSize="18dp"
+        android:layout_below="@+id/editText5"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
 </RelativeLayout>
