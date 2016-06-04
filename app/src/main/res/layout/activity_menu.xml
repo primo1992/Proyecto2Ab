@@ -8,83 +8,142 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.carlos.proyecto2ab.Menu"
-    android:background="#768275">
+    android:background="#0918b7">
 
-    <Button
+    <ImageView
         android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Mi Presupuesto"
-        android:id="@+id/presupuesto1"
-        android:layout_marginTop="47dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        android:onClick="darclick1" />
-
-    <Button
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Balance"
-        android:id="@+id/balance1"
-        android:layout_marginTop="103dp"
-        android:layout_below="@+id/presupuesto1"
-        android:layout_alignLeft="@+id/presupuesto1"
-        android:layout_alignStart="@+id/presupuesto1"
-        android:layout_alignRight="@+id/presupuesto1"
-        android:layout_alignEnd="@+id/presupuesto1"
-        android:onClick="darclick3" />
-
-    <Button
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Ahorro"
-        android:id="@+id/ahorro1"
-        android:layout_marginTop="112dp"
-        android:layout_below="@+id/balance1"
-        android:layout_alignLeft="@+id/balance1"
-        android:layout_alignStart="@+id/balance1"
-        android:layout_alignRight="@+id/balance1"
-        android:layout_alignEnd="@+id/balance1"
-        android:onClick="darclick5" />
-
-    <Button
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:text="Mis Gastos"
-        android:id="@+id/gastos1"
-        android:layout_alignTop="@+id/presupuesto1"
-        android:layout_alignLeft="@+id/perfil1"
-        android:layout_alignStart="@+id/perfil1"
+        android:layout_height="100dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/gastos"
+        android:layout_alignParentEnd="true"
         android:onClick="darclick2" />
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresos"
+        android:id="@+id/textView7"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ingreso"
+        android:onClick="darclick1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gastos"
+        android:id="@+id/textView8"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
         android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/balance"
+        android:onClick="darclick3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:id="@+id/textView30"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/imageView4"
+        android:src="@drawable/tips2"
+        android:onClick="darclick4" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Consejos"
-        android:id="@+id/consejos1"
-        android:onClick="darclick4"
-        android:layout_above="@+id/ahorro1"
-        android:layout_toEndOf="@+id/balance1" />
+        android:id="@+id/textView31"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_alignStart="@+id/imageView7" />
 
-    <Button
-        android:layout_width="140dp"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView8"
+        android:src="@drawable/ahorro"
+        android:onClick="darclick5"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mi Perfil"
-        android:id="@+id/perfil1"
-        android:layout_alignTop="@+id/ahorro1"
-        android:layout_toEndOf="@+id/ahorro1"
+        android:text="Ahorro"
+        android:id="@+id/textView32"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView9"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/image_gallery"
         android:onClick="darclick6" />
 
-    <Button
-        android:layout_width="140dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cerrar  sesion"
+        android:text="Perfil"
+        android:id="@+id/textView33"
+        android:textSize="22dp"
+        android:textColor="#f9f6f6"
+        android:layout_alignTop="@+id/textView32"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="U"
         android:id="@+id/button19"
+        android:layout_below="@+id/textView32"
+        android:layout_toStartOf="@+id/imageView9"
+        android:onClick="usuario"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="X"
+        android:id="@+id/button20"
         android:onClick="salir"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/perfil1" />
+        android:layout_below="@+id/textView33"
+        android:layout_alignEnd="@+id/imageView9"
+        android:background="#080808"
+        android:textColor="#fbf7f7" />
 
 
 </RelativeLayout>

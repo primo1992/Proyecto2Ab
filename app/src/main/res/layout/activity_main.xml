@@ -8,18 +8,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.carlos.proyecto2ab.MainActivity"
-    android:background="#4f4d97">
+    android:background="#c7c6f6">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Registrase"
+        android:text="Registrar"
         android:id="@+id/button"
         android:onClick="registrarse"
+        android:backgroundTint="#05050c"
+        android:textColor="#fbf9f9"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="116dp"
-        android:backgroundTint="#f3fdfbfb" />
+        android:layout_toEndOf="@+id/textView"
+        android:background="#05050c" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +30,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="24dp"
-        android:textColor="#ffffff" />
+        android:textColor="#010101" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,40 +38,36 @@
         android:text="AGENPER"
         android:id="@+id/textView2"
         android:textSize="34dp"
-        android:textColor="#ffffff"
+        android:textColor="#010101"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Si ya tienes cuenta"
-        android:id="@+id/textView7"
-        android:textSize="22dp"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/button2"
-        android:layout_alignEnd="@+id/textView8" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Si a un no la tienes "
-        android:id="@+id/textView8"
-        android:textSize="22dp"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true" />
-
     <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Iniciar "
+        android:id="@+id/button2"
+        android:backgroundTint="#05050c"
+        android:onClick="iniciar"
+        android:textColorHighlight="#fbf9f9"
+        android:textColorHint="#fbf9f9"
+        android:textColor="#fbf9f9"
+        android:nestedScrollingEnabled="true"
+        android:elegantTextHeight="false"
+        android:textColorLink="#fbf9f9"
+        android:singleLine="true"
+        android:allowUndo="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_toStartOf="@+id/textView"
+        android:background="#05050c" />
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Iniciar"
-        android:id="@+id/button2"
-        android:backgroundTint="#f3fdfbfb"
-        android:onClick="iniciar"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/aaaaaa" />
 
 
 </RelativeLayout>

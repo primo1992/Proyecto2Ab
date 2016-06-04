@@ -15,7 +15,7 @@ public class gastos extends AppCompatActivity {
     }
 
 
-    public void guardar(View View){
+    public void guardar1(View View){
         Toast.makeText(this, "Datos guardados con exito ", Toast.LENGTH_LONG).show();
         finish();
         Intent i = new Intent(this, com.example.carlos.proyecto2ab.Menu.class);

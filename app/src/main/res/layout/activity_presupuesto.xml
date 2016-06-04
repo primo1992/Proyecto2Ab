@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.carlos.proyecto2ab.presupuesto"
-    android:background="@android:color/darker_gray">
+    android:background="@android:color/darker_gray"
+    android:visibility="visible">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +18,8 @@
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="26dp" />
+        android:textSize="26dp"
+        android:textColor="#080e43" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,7 +29,8 @@
         android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_marginTop="50dp"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        android:textColor="#080e43" />
 
     <EditText
         android:layout_width="300dp"
@@ -47,7 +50,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="50dp"
         android:checked="false"
-        android:onClick="seleccionar" />
+        android:onClick="seleccionar"
+        android:textColor="#080e43" />
 
     <Button
         android:layout_width="wrap_content"
@@ -55,9 +59,10 @@
         android:text="Guardar"
         android:id="@+id/mensaje1"
         android:onClick="mensaje"
-        android:layout_below="@+id/editText4"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp" />
+        android:background="#080e43"
+        android:textColor="#f8f9fc" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -91,7 +96,8 @@
         android:textSize="18dp"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:textColor="#080e43" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -101,6 +107,7 @@
         android:textSize="18dp"
         android:layout_below="@+id/editText5"
         android:layout_alignParentStart="true"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:textColor="#080e43" />
 
 </RelativeLayout>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.carlos.proyecto2ab">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +25,8 @@
         <activity android:name=".consejos" />
         <activity android:name=".perfil" />
         <activity android:name=".ahorro" />
-        <activity android:name=".balance"></activity>
+        <activity android:name=".balance" />
+        <activity android:name=".usuarios"></activity>
     </application>
 
 </manifest>
